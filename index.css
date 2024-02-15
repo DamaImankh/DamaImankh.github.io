@@ -1,12 +1,95 @@
-p{
-  color: red;
-  font-size: 20px;
+.head-bar div{
+  margin: 30px 30px 30px 0;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.box{
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-
+.head-bar{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 70px;
+  margin-right: 300px;
 }
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-top: 20px; 
+}
+
+.name{
+  font-size: 30px;
+  font-weight: bold;
+  width: 500px;
+  text-align: start;
+  padding: 0 50px 0 50px;
+  }
+
+  .name:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .hello{
+    width: 450px;
+  }
+
+  .text-card{
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 500px;
+  }
+
+  .resume-card{
+    font-weight: 300;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: rgb(231, 109, 85);
+    color: white;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resume-card:hover{
+    background-color: rgb(204, 82, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: background-color 0.3s, transform 0.5s, box-shadow 0.3s;
+  }
+
+  .profile-picture{
+    display: flex;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .profile-picture:hover img{
+    animation: rotateMyImage 1s linear 1;
+  }
+
+  @keyframes rotateMyImage{
+    0%{
+      transform: rotateY(0deg);
+    }
+
+    100%{
+      transform: rotateY(350deg);
+    }
+  }
+
+  .name,
+  .profile-picture {
+    display: inline-block; 
+  }
+
+  img{
+    width: 200px;
+    height: 160px;
+    border-radius: 50%;
+  }
+
+  
